@@ -11,13 +11,14 @@
     <py-script>
         import datetime
         import js
-
+        import random
         class App:
             # function to get the current date and time
             def getCurrentDateAndTime(self):
                 now = datetime.datetime.now()
                 return f"Date: {now.date()}\nTime: {str(now.time())[:8]}"
-
+            def getRandomNumber(self):
+                return random.randint(1,100)
         js.app = App()
     </py-script>
 
