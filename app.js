@@ -19,3 +19,14 @@ getDateButton.addEventListener("click", () => {
 getRandomButton.addEventListener("click", () => {
     randomOutput.innerText = app.getRandomNumber();
 });
+
+const upperBound = document.getElementById("upperBound");
+const lowerBound = document.getElementById("lowerBound");
+const getRandomRangeButton = document.getElementById("getRandomRangeButton");
+const randomRangeOutput = document.getElementById("randomRangeOutput");
+
+
+// link python functions to the buttons
+getRandomRangeButton.addEventListener("click", () => {
+    randomRangeOutput.innerText = app.getRandomNumber2(lowerBound.value,upperBound.value);
+});

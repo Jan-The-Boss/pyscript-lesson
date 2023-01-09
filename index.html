@@ -19,7 +19,9 @@
                 return f"Date: {now.date()}\nTime: {str(now.time())[:8]}"
             def getRandomNumber(self):
                 return random.randint(1,100)
-        js.app = App()
+            def getRandomNumber2(self,lowerBound,upperBound):
+                return random.randint(int(lowerBound),int(upperBound))
+        js.app = App()  
     </py-script>
 
     <!--site title-->
